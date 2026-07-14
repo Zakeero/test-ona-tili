@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>O'zbek Tili Testi – Registon O'quv Markazi</title>
+  <title>Ona Tili Testi – Registon O'quv Markazi</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -213,8 +213,8 @@
     // ══════════════════════════════════════════════════
     //  ⚙️  SOZLAMALAR — faqat shu ikki qatorni o'zgartiring
     // ══════════════════════════════════════════════════
-    const TELEGRAM_BOT_TOKEN = 'BOT_TOKENINI_SHU_YERGA_YOZING';
-    const TELEGRAM_CHAT_ID   = 'CHAT_ID_SHU_YERGA_YOZING';
+    const TELEGRAM_BOT_TOKEN = '8639287223:AAHXR6t4orfIXDh5dSRBVKg2vHXSsQiOIBM';
+    const TELEGRAM_CHAT_ID   = '1534900074';
     // ══════════════════════════════════════════════════
 
     const questions = [
@@ -420,7 +420,7 @@
       circle.style.strokeDashoffset = circ;
       setTimeout(() => { circle.style.strokeDashoffset = circ - (pct/100)*circ; }, 100);
       let emoji = '😕', ratingText = "Ko'proq o'qib chiqing!";
-      if (pct >= 90) { emoji = '🏆'; ratingText = "Zo'r! Siz adabiyot bilimdonisiz!"; }
+      if (pct >= 90) { emoji = '🏆'; ratingText = "Zo'r! Siz ona tili bilimdonisiz!"; }
       else if (pct >= 70) { emoji = '🌟'; ratingText = "Yaxshi natija! Davom eting!"; }
       else if (pct >= 50) { emoji = '📖'; ratingText = "Yomon emas, lekin yana o'qing!"; }
       $('result-emoji').textContent = emoji;
@@ -428,7 +428,7 @@
       const errContainer = $('errors-container');
       const errors = userAnswers.filter(a => a.chosen !== a.correct);
       if (errors.length === 0) {
-        errContainer.innerHTML = '<div class="text-center py-6"><div class="text-4xl mb-2">🎯</div><p class="text-green-600 font-semibold">Barcha savollar to\'g\'ri javoblandi!</p></div>';
+        errContainer.innerHTML = '<div class="text-center py-6"><div class="text-4xl mb-2">🎯</div><p class="text-green-600 font-semibold">Barcha savollarga javoblar qabul qilindi!</p></div>';
       } else {
         errContainer.innerHTML = errors.map((a, i) =>
           '<div class="error-card">' +
@@ -477,9 +477,9 @@
         <div class="wave-bg px-6 pt-7 pb-8 text-center relative">
           <img src="logo.png" alt="Registon O'quv Markazi" class="logo-img mx-auto mb-5" style="filter:brightness(0) invert(1);" />
           <h1 class="playfair text-white text-2xl sm:text-3xl font-black leading-tight mb-2">
-            O'zbek Tili<br/>Bilimlar Testi
+            Ona tili<br/>majburiy blok testi
           </h1>
-          <p class="text-orange-100 text-sm">O'zbek tili bo'yicha bilimingizni sinab ko'ring!</p>
+          <p class="text-orange-100 text-sm">Ona tili bo'yicha bilimingizni sinab ko'ring!</p>
 
           <!-- Stats row -->
           <div class="grid grid-cols-3 gap-3 mt-6">
@@ -518,7 +518,7 @@
               <span class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background:var(--orange-pale)">
                 <i class="fa-solid fa-trophy" style="color:var(--orange)"></i>
               </span>
-              <span>Natijani ko'rish uchun aloqa ma'lumotlari kerak</span>
+              <span>Natijani oxirida bilib olish mumkin</span>
             </div>
           </div>
 
@@ -527,7 +527,7 @@
             Testni boshlash
           </button>
           <p class="text-xs text-center mt-4" style="color:var(--text-muted)">
-            <i class="fa-solid fa-lock mr-1"></i>Ma'lumotlar faqat Registon o'quv markazi uchun
+            <i class="fa-solid fa-lock mr-1"></i>Ma'lumotlar faqat Registon o'quv markaziga ko'rinadi
           </p>
         </div>
       </div>
@@ -591,7 +591,7 @@
 
         <div class="px-6 py-7">
           <p class="text-sm text-center mb-6" style="color:var(--text-mid)">
-            Bizning mutaxassislarimiz siz bilan bog'lanib, bilimingizni yanada oshirishga yordam beradi.
+            Natijangizga qarab bizning ustozlarimiz kelgusida sizga yordam berishadi!
           </p>
 
           <div class="mb-4">
@@ -612,7 +612,7 @@
             <i class="fa-solid fa-paper-plane mr-2"></i>Natijani bilish
           </button>
           <p class="text-xs text-center mt-4" style="color:var(--text-muted)">
-            <i class="fa-solid fa-lock mr-1"></i>Ma'lumotlaringiz maxfiy saqlanadi
+            <i class="fa-solid fa-lock mr-1"></i>Ma'lumotlaringiz hech qayerga chiqarilmaydi
           </p>
         </div>
       </div>
